@@ -20,3 +20,5 @@ jobs:
         with:
           name: Release ${{ github.ref_name }}
           body: Автоматический релиз новой версии
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
